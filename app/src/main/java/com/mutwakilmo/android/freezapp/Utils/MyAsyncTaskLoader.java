@@ -18,7 +18,7 @@ public class MyAsyncTaskLoader extends AsyncTaskLoader<Long> {
     order to run it in a separate Thread*/
     @Override
     public Long loadInBackground() {
-        return Utils.executeLongActionDuring5seconds();
+        return Utils.executeLongActionDuring7seconds();
     }
 
 

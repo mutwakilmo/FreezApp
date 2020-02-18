@@ -43,6 +43,6 @@ public class MyAsyncTask extends AsyncTask<Void, Void, Long> {
     protected Long doInBackground(Void... voids) {
         this.callback.get().doInBackground(); // Call the related callback method
         Log.e("TAG", "AsyncTask doing some big work...");
-        return Utils.executeLongActionDuring5seconds(); // Execute our task
+        return Utils.executeLongActionDuring7seconds(); // Execute our task
     }
 }

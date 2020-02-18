@@ -38,7 +38,7 @@ public class MyHandlerThread extends HandlerThread {
             @Override
             public void run() {
                 // 2.5 - Execute our long task during 7 seconds
-                Utils.executeLongActionDuring5seconds();
+                Utils.executeLongActionDuring7seconds();
 
                 // 2.6 - Update UI after task finished (In Main Thread)
                 new Handler(Looper.getMainLooper()).post(new Runnable() {
