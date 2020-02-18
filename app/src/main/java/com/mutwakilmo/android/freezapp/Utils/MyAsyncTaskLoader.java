@@ -1,4 +1,4 @@
-package com.mutwakilmo.android.freezapp;
+package com.mutwakilmo.android.freezapp.Utils;
 
 import android.content.Context;
 
@@ -13,11 +13,19 @@ public class MyAsyncTaskLoader extends AsyncTaskLoader<Long> {
         super(context);
     }
 
+
+    /*We put our lengthy task there in
+    order to run it in a separate Thread*/
     @Override
     public Long loadInBackground() {
         return Utils.executeLongActionDuring5seconds();
     }
 
+
+    /*
+    It is re-declared in order to force the data to load,
+     particularly after the loader is reinitialize
+     */
     @Override
     protected void onStartLoading() {
         super.onStartLoading();

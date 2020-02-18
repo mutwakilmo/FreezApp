@@ -1,4 +1,4 @@
-package com.mutwakilmo.android.freezapp;
+package com.mutwakilmo.android.freezapp.Controllers;
 
 
 import android.os.Bundle;
@@ -10,6 +10,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
+
+import com.mutwakilmo.android.freezapp.R;
+import com.mutwakilmo.android.freezapp.Utils.MyAsyncTask;
+import com.mutwakilmo.android.freezapp.Utils.MyAsyncTaskLoader;
+import com.mutwakilmo.android.freezapp.Utils.MyHandlerThread;
+import com.mutwakilmo.android.freezapp.Utils.Utils;
 
 
 public class MainActivity extends AppCompatActivity implements MyAsyncTask.Listeners, LoaderManager.LoaderCallbacks<Long> {

@@ -1,4 +1,4 @@
-package com.mutwakilmo.android.freezapp;
+package com.mutwakilmo.android.freezapp.Utils;
 
 import android.os.Handler;
 import android.os.HandlerThread;
